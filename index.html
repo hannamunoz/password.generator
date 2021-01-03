@@ -30,36 +30,36 @@
                         <div class="settings container text-center">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="uppercase" value="option1" />
-                                <label class="form-check-label" for="inlineCheckbox1">Uppercase Letters</label>
+                                <label class="form-check-label" for="uppercase">Uppercase Letters</label>
                             </div>
 
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="lowercase" value="option2" />
-                                <label class="form-check-label" for="inlineCheckbox2">Lowercase Letters</label>
+                                <label class="form-check-label" for="lowercase">Lowercase Letters</label>
                             </div>
 
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="numbers" value="option2" />
-                                <label class="form-check-label" for="inlineCheckbox2">Numbers</label>
+                                <input class="form-check-input" type="checkbox" id="numbers" value="option3" />
+                                <label class="form-check-label" for="numbers">Numbers</label>
                             </div>
 
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="characters" value="option2" />
-                                <label class="form-check-label" for="inlineCheckbox2">Special Characters</label>
+                                <input class="form-check-input" type="checkbox" id="characters" value="option4" />
+                                <label class="form-check-label" for="characters">Special Characters</label>
                             </div>
                         </div>
                         <input type="range" min="8" max="128" name="slider" id="slider">
                         <div class="card-footer">
-                            <button onclick="generate()" id="generate" class="btn">Generate Password</button>
-                            <button onclick="copyPassword()" id="copy" class="btn">Copy to Clipboard</button>
+                            <button onclick="generate()" id="generate" class="btn btn-danger">Generate Password</button>
+                            <button onclick="copyPassword()" id="copy" class="btn btn-danger">Copy to Clipboard</button>
                             <div id="length"></div>
                         </div>
+                        <div class="previouspasswords text-center">
+                            <b>Previously Generated Passwords</b>
+                            <br />
+                            <div id="lastpasswords"></div>
+                        </div>
                     </div>
-                </div>
-                <div class="previouspasswords text-center">
-                    <b>Previously Generated Passwords</b>
-                    <br />
-                    <div id="lastpasswords"></div>
                 </div>
             </div>
         </div>
