@@ -53,6 +53,11 @@ header {
     width: 100%;
 }
 
+#length {
+    display: inline-block;
+    width: 100px;
+}
+
 .card-header::after {
   content: " ";
   display: block;
@@ -108,7 +113,7 @@ button[disabled] {
   float: right;
 }
 
-#password {
+#display {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -127,6 +132,10 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+.previouspasswords {
+    margin-bottom: 20px;
 }
 
 @media (max-width: 690px) {

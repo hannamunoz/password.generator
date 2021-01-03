@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -25,26 +24,27 @@
                             <h2>Generate a Password</h2>
                         </div>
                         <div class="card-body">
-                            <textarea readonly id="password" placeholder="Your Secure Password"
+                            <textarea readonly id="display" placeholder="Your Secure Password"
                                 aria-label="Generated Password"></textarea>
                         </div>
                         <input type="range" min="0" max="50" name="slider" id="slider">
                         <div class="card-footer">
-                            <button id="generate" class="btn">Generate Password</button>
-                            <button id="copy" class="btn">Copy to Clipboard</button>
+                            <button onclick="generate()" id="generate" class="btn">Generate Password</button>
+                            <button onclick="copyPassword()" id="copy" class="btn">Copy to Clipboard</button>
                             <div id="length"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>
+        <div class="previouspasswords text-center">
+            <b>Previously Generated Passwords</b>
+            <br />
+            <div id="lastpasswords"></div>
+        </div>
     </div>
-    
-    <div class="previous-passwords">
-        <b>Previously Generated Passwords</b>
-        <br />
-        <div id="lastpasswords"></div>
-    </div>
+
+<script src="script.js"></script>
 </body>
 
 </html>
