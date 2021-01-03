@@ -37,7 +37,7 @@ document.getElementById("lastpasswords").innerHTML += password + "<br />";
 }
 
 // Set default length of slider 
-document.getElementById("length").innerHTML = "Length: 25";
+document.getElementById("length").innerHTML = "Length: 64";
 
 // Function to set length depending on slider
 document.getElementById("slider").oninput = function(){
@@ -58,6 +58,6 @@ document.getElementById("display").select();
 
 document.execCommand("Copy");
 
-alert("Password copied to clipbaord");
+alert("Password copied to clipbaord")
 
 }

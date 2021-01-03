@@ -27,7 +27,28 @@
                             <textarea readonly id="display" placeholder="Your Secure Password"
                                 aria-label="Generated Password"></textarea>
                         </div>
-                        <input type="range" min="0" max="50" name="slider" id="slider">
+                        <div class="settings container text-center">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="uppercase" value="option1" />
+                                <label class="form-check-label" for="inlineCheckbox1">Uppercase Letters</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="lowercase" value="option2" />
+                                <label class="form-check-label" for="inlineCheckbox2">Lowercase Letters</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="numbers" value="option2" />
+                                <label class="form-check-label" for="inlineCheckbox2">Numbers</label>
+                            </div>
+
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="characters" value="option2" />
+                                <label class="form-check-label" for="inlineCheckbox2">Special Characters</label>
+                            </div>
+                        </div>
+                        <input type="range" min="8" max="128" name="slider" id="slider">
                         <div class="card-footer">
                             <button onclick="generate()" id="generate" class="btn">Generate Password</button>
                             <button onclick="copyPassword()" id="copy" class="btn">Copy to Clipboard</button>
@@ -35,16 +56,16 @@
                         </div>
                     </div>
                 </div>
+                <div class="previouspasswords text-center">
+                    <b>Previously Generated Passwords</b>
+                    <br />
+                    <div id="lastpasswords"></div>
+                </div>
             </div>
-        </div>
-        <div class="previouspasswords text-center">
-            <b>Previously Generated Passwords</b>
-            <br />
-            <div id="lastpasswords"></div>
         </div>
     </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
