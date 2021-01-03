@@ -23,7 +23,7 @@ function generate() {
 
     let password = "";
 
-    // Check if at least one box is seected
+    // Check if at least one box is selected
     if (uppercase || lowercase || numbers || characters) {
         // Create for loop to choose password characters
         for (var i = 0; i < complexity; i++) {
