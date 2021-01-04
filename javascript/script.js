@@ -32,9 +32,6 @@ function generate() {
 
         // Add password to textbox/display area
         document.getElementById("display").value = password;
-
-        // Add password to previously generated section
-        document.getElementById("lastpasswords").innerHTML += password + "<br />";
     } else {
         // If no boxes are sleceted alert user to check at lease one box
         alert("Please select at least one checkbox.")
